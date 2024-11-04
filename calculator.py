@@ -21,8 +21,8 @@ class Calculator:
 
 def main():
     print("Calculator")
-    num1 = float(input("Enter the first number: "))
-    num2 = float(input("Enter the second number: "))
+    num1 = float(input("First number: "))
+    num2 = float(input("Second number: "))
 
     calc = Calculator(num1, num2)
 
@@ -32,20 +32,20 @@ def main():
     print("[3] * ")
     print("[4] ÷ ")
 
-    operation = input("Choose the operation (1 | 2 | 3 | 4): ")
+    operation = input("Choose the operation ( 1 | 2 | 3 | 4 ): ")
 
     if operation == '1':
         result = calc.add()
-        print(f"The result of addition is: {result}")
+        print(f"Result: {result}")
     elif operation == '2':
         result = calc.subtract()
-        print(f"The result of subtraction is: {result}")
+        print(f"Result: {result}")
     elif operation == '3':
         result = calc.multiply()
-        print(f"The result of multiplication is: {result}")
+        print(f"Result: {result}")
     elif operation == '4':
         result = calc.divide()
-        print(f"The result of division is: {result}")
+        print(f"Result: {result}")
     else:
         print("[1-4]")
 
